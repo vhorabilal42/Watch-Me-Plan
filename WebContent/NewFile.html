@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<form action="newServlet" method="post">
+
+		<table border="0" cellpadding="7" cellspacing="7">
+			
+			<tr>
+				<td><label for="ename"
+					style="font-size: 20px; color: white; font-weight: bold;">Event	Name </label>
+				</td>
+				<td>
+				<input type="text" name="ename" placeholder="Event Name">
+				<input type="hidden" name="isapproved" value="No"> 
+				</td>
+			</tr>
+			
+			<tr>
+				<td><label for="evenue"
+					style="font-size: 20px; color: white; font-weight: bold;">Event Venue </label>
+					</td>
+				<td><input type="text" name="evenue" placeholder="Event Venue"></td>
+			</tr>
+
+			<tr>
+				<td><label for="ecategories"
+					style="font-size: 20px; color: white; font-weight: bold;">Event	Category </label>
+				</td>
+				
+				<td><select name="ecategories">
+						<option disabled selected hidden>Select Category</option>
+						<option value="Food">Food</option>
+						<option value="Music">Music</option>
+						<option value="Dance">Dance</option>
+						<option value="Drama">Drama</option>
+						<option value="Exhibition">Exhibition</option>
+						<option value="Cultural Event">Cultural Event</option>
+				</select></td>
+			</tr>
+			
+			<tr>
+				<td><label for="etype"
+					style="font-size: 20px; color: white; font-weight: bold;">Event Type </label>
+				</td>
+				
+				<td style="font-size: 20px; color: white;">
+				<input type="radio" name="etype" value="Online"> &nbsp; Online &nbsp;
+				<input type="radio" name="etype" value="Offline"> &nbsp;Offline
+				</td>
+			</tr>
+			
+			<tr>
+				<td><label for="estarttime"
+					style="font-size: 20px; color: white; font-weight: bold;">Start Time </label>
+				</td>
+				<td><input type="datetime-local" name="estarttime"></td>
+			</tr>
+
+			<!--
+			 <tr>
+				<td><label for="documents" style="font-size:20px ;color: white;font-weight: bold;">Verification Document </label></td>
+				<td><input type="file" name="documents"></td> 
+				 <input type="hidden" name="isapproved" value="No"> 
+			 </tr>
+			 -->
+			<tr>
+				<td><label for="eendtime"
+					style="font-size: 20px; color: white; font-weight: bold;">End Time </label>
+				</td>
+				<td><input type="datetime-local" name="eendtime"></td>
+			</tr>
+
+			<tr>
+				<td><label for="eprice"
+					style="font-size: 20px; color: white; font-weight: bold;">Price per ticket</label>
+				</td>
+				<td><input type="text" name="eprice"></td>
+			</tr>
+			
+			<tr>
+				<td><label for="edetails"
+					style="font-size: 20px; color: white; font-weight: bold;">Event Summary</label>
+				</td>
+				
+				<td><textarea name="edetails" rows="6" cols="30" placeholder="Enter summary of you event"></textarea></td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+				<input type="submit" value="Create" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+
+</body>
+</html>
